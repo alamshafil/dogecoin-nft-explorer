@@ -6,7 +6,7 @@
     let txID = "";
   
     async function viewNFT() {
-      if (txID != "") goto("/txid/" + txID)
+      if (txID != "") goto("/dogecoin-nft-explorer/txid/" + txID)
       else error = "TX ID can't be empty!";
     }
   </script>
@@ -15,7 +15,7 @@
       <!-- Hero -->
       <div class="hero h-screen bg-base-200">
         <div class="hero-content flex-col">
-          <img class="w-20" src="/dogecoin.png" alt="Logo" />
+          <img class="w-20" src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo" />
           <div class="text-center">
             <h1 class="text-2xl font-bold">
               View NFTs on the Dogecoin blockchain!

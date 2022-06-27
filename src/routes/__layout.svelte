@@ -6,7 +6,7 @@
 
   async function viewNFT() {
     if (txID != "") {
-      goto("/txid/" + txID, {replaceState: true})
+      goto("/dogecoin-nft-explorer/txid/" + txID, {replaceState: true})
       txID = ""
     }
   }
@@ -14,8 +14,8 @@
 
 <div class="navbar bg-base-100 shadow-lg">
   <div class="flex-1">
-    <img src="/dogecoin.png" alt="Logo" class="w-10 ml-4">
-    <a href="/" class="btn btn-ghost normal-case text-xl">Dogecoin NFT Explorer</a>
+    <img src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo" class="w-10 ml-4">
+    <a href="/dogecoin-nft-explorer" class="btn btn-ghost normal-case text-xl">Dogecoin NFT Explorer</a>
     <div class="form-control">
       <div class="input-group">
         <input type="text" bind:value={txID} placeholder="TX ID" class="input input-bordered" />
@@ -27,8 +27,8 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal p-0">
-      <li><a href="/">Home</a></li>
-      <li><a href="/">Mint</a></li>
+      <li><a href="/dogecoin-nft-explorer">Home</a></li>
+      <li><a href="/dogecoin-nft-explorer">Mint</a></li>
     </ul>
   </div>
 </div>
