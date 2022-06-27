@@ -52,48 +52,5 @@
           </div>
         </div>
       </div>
-    <!--
-      <div class="bg-base-200 mx-auto flex items-center justify-center h-screen">
-        <div class="card w-96 bg-base-100 shadow-xl">
-          <figure><img src={nftData} alt="NFT" /></figure>
-          <div class="card-body space-y-2">
-            <h2 class="card-title">Name: {nftName}</h2>
-            <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-              <input type="checkbox" />
-              <div class="collapse-title text-xl font-medium">
-                Click to show NFT details
-              </div>
-              <div class="collapse-content">
-                <p><b>Description</b> {nftDesc}</p>
-                <p><b>Minted by:</b> <span class="text-xs">{nftCreator}</span></p>
-                <p><b>Minted at:</b> {parseTime(nftMintTime)}</p>
-                <p><b>Supply:</b> {nftSupply}</p>
-                <p><b>Collection</b> {nftCollection}</p>
-                <p><b>NSFW:</b> {nftNSFW}</p>
-                <p><b>Royalities Percentage:</b> {nftRoyalPer * 100}%</p>
-                <p><b>Royalities Payment:</b> <span class="text-xs">{nftRoyalPay}</span></p>
-              </div>
-            </div>
-            <div class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
-              <input type="checkbox" />
-              <div class="collapse-title text-xl font-medium">
-                Click to show NFT transfer details
-              </div>
-              <div class="collapse-content">
-                <p class="mb-2"><span class="text-xs">{newPrevOut} bought {nftName} from {newPrevIn} for <b>{newValue} DOGE</b>.</p>
-                <p><b>New Supply:</b> {newSupply}</p>
-                <p><b>NFT TX ID: </b><span class="text-xs">{newCreator}</span></p>
-                <p><b>Last TX ID: </b><span class="text-xs">{newPrev}</span></p>
-                <p><b>Payment TX ID: </b><span class="text-xs">{newRoyalTX}</span></p>
-                <p><b>IP Percentage: </b>{newIPRightsPer}</p>
-                <p><b>IP Rights: </b><span class="text-xs">{newIPRights}</span></p>
-              </div>
-            </div>
-            <div class="card-actions justify-end">
-              <button on:click={clear} class="btn btn-primary">Go back</button>
-            </div>
-          </div>
-        </div>
-      </div> -->
   </main>
   
