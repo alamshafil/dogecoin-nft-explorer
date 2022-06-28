@@ -23,7 +23,11 @@
 </script>
 
 <svelte:head>
-    <title>{name} - Dogecoin NFT Explorer</title>
+    {#if name != undefined}
+        <title>{name} - Dogecoin NFT Explorer</title>
+    {:else}
+        <title>Not found - Dogecoin NFT Explorer</title>
+    {/if}
 </svelte:head>
 
 <div class="flex">
@@ -35,7 +39,11 @@
                 <h2 class="card-title">{name}</h2>
                 <p>{desc}</p>
                 {#if nftActivity.length != 0}
-                    <p class="text-sm">Last sale: <b>{nftActivity[nftActivity.length-1].op.value} Ɖ</b></p>
+                    <p class="text-sm">
+                        Last sale: <b
+                            >{nftActivity[nftActivity.length - 1].op.value} Ɖ</b
+                        >
+                    </p>
                 {/if}
             </div>
         </div>
