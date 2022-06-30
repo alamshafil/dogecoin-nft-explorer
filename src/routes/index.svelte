@@ -1,6 +1,6 @@
 <script>
     import Fa from 'svelte-fa'
-    import { faSearch, faWarning } from '@fortawesome/free-solid-svg-icons'
+    import { faSearch, faWarning } from '@fortawesome/free-solid-svg-icons/index.es'
     import { goto } from "$app/navigation";
 
     let error = "";

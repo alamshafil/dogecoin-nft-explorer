@@ -1,6 +1,6 @@
 <script>
     import Fa from 'svelte-fa'
-    import { faSync, faWarning, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+    import { faSync, faWarning, faArrowLeft } from '@fortawesome/free-solid-svg-icons/index.es'
     import { page } from "$app/stores";
     import { hex2a } from "$lib/utils.js";
     import NFTCard from "$lib/NFTCard.svelte";

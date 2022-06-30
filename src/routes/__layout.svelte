@@ -1,7 +1,7 @@
 <script>
   import "../app.css";
   import Fa from 'svelte-fa'
-  import { faHome, faAdd, faBars } from '@fortawesome/free-solid-svg-icons'
+  import { faHome, faAdd, faBars } from '@fortawesome/free-solid-svg-icons/index.es'
   import { onMount } from 'svelte'
   import { themeChange } from 'theme-change'
 
