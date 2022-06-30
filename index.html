@@ -5,41 +5,53 @@
 		<link rel="icon" href="/dogecoin-nft-explorer/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<title>Dogecoin NFT Explorer</title>
-		<meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/dogecoin-nft-explorer/_app/immutable/assets/pages/__layout.svelte-7df03fe6.css">
-	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/start-45b69ade.js">
-	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/chunks/index-2993fb00.js">
+		<meta http-equiv="content-security-policy" content=""><title>Dogecoin NFT Explorer</title>
+	<link rel="stylesheet" href="/dogecoin-nft-explorer/_app/immutable/assets/pages/__layout.svelte-ba85c106.css">
+	<link rel="stylesheet" href="/dogecoin-nft-explorer/_app/immutable/assets/index.es-7a9bc945.css">
+	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/start-fffd60c1.js">
+	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/chunks/index-5d4dd3e7.js">
 	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/chunks/singletons-d1fb5791.js">
-	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/pages/__layout.svelte-654dbdd1.js">
-	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/chunks/navigation-0e6511d1.js">
-	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/pages/index.svelte-4c09a989.js">
+	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/pages/__layout.svelte-a8e2f95c.js">
+	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/chunks/index.es-3f41b5a4.js">
+	<link rel="modulepreload" href="/dogecoin-nft-explorer/_app/immutable/pages/index.svelte-a557fadd.js">
 	</head>
 	<body>
 		<div>
 
 
-<div class="navbar bg-base-100 shadow-lg"><div class="flex-1"><img src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo" class="w-10 ml-4">
-    <a href="/dogecoin-nft-explorer" class="btn btn-ghost normal-case text-xl">Dogecoin NFT Explorer</a>
-    <div class="form-control"><div class="input-group"><input type="text" placeholder="TX ID" class="input input-bordered" value="">
-        <button class="btn btn-square"><svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg></button></div></div></div>
-  <div class="flex-none"><ul class="menu menu-horizontal p-0"><li><a href="/dogecoin-nft-explorer">Home</a></li>
-      <li><a href="/dogecoin-nft-explorer">Mint</a></li></ul></div></div>
+<div class="drawer"><input id="drawer-nav" type="checkbox" class="drawer-toggle">
+  <div class="drawer-content flex flex-col">
+    <div class="w-full navbar bg-base-300"><div class="flex-none lg:hidden"><label for="drawer-nav" class="btn btn-square btn-ghost"><svg id="" class="svelte-fa  svelte-1w3t65e" style="width:1.25em;height:1em;text-align:center;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M0 96C0 78.33 14.33 64 32 64H416C433.7 64 448 78.33 448 96C448 113.7 433.7 128 416 128H32C14.33 128 0 113.7 0 96zM0 256C0 238.3 14.33 224 32 224H416C433.7 224 448 238.3 448 256C448 273.7 433.7 288 416 288H32C14.33 288 0 273.7 0 256zM416 448H32C14.33 448 0 433.7 0 416C0 398.3 14.33 384 32 384H416C433.7 384 448 398.3 448 416C448 433.7 433.7 448 416 448z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg></label></div>
+      <div class="flex-1"><img src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo" class="w-10 ml-4">
+        <a href="/dogecoin-nft-explorer" class="btn btn-ghost normal-case text-xl">Dogecoin NFT Explorer</a></div>
+      <div class="flex-none hidden lg:block"><ul class="menu menu-horizontal"><div class="form-control p-1"><label class="label cursor-pointer"><span class="label-text mr-4">Theme</span> 
+              <input data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" type="checkbox" class="toggle"></label></div>
+          
+          <li><a href="/dogecoin-nft-explorer"><svg id="" class="svelte-fa  svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg> Home</a></li>
+          <li><a href="/dogecoin-nft-explorer/mint"><svg id="" class="svelte-fa  svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg> Mint</a></li></ul></div></div>
+    
+    
 
 <main>
-      <div class="hero h-screen bg-base-200"><div class="hero-content flex-col"><img class="w-20" src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo">
-          <div class="text-center"><h1 class="text-2xl font-bold">View NFTs on the Dogecoin blockchain!
-            </h1>
-            <p class="py-4">NFT protocol created by <a href="https://twitter.com/inevitable360">inevitable360</a></p></div>
-          <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"><div class="card-body"><div class="form-control">
-                <label for="" class="label"><span class="label-text">Transaction ID:</span></label>
-                <input type="text" placeholder="TX ID" class="input input-bordered" value=""></div>
-              <div class="form-control mt-6"><button class="btn btn-primary">View NFT</button></div></div></div></div></div></main>
+    <div class="hero" style="height: 90vh;"><div class="hero-content flex-col"><img class="w-20" src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo">
+            <div class="text-center"><h1 class="text-2xl font-bold">View NFTs on the Dogecoin blockchain!
+                </h1>
+                <p class="py-4">NFT protocol created by <a href="https://twitter.com/inevitable360">inevitable360</a> •
+                    API provided by <a href="https://chain.so/DOGE">chain.so</a></p></div>
+            <div class="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100"><div class="card-body"><div class="form-control">
+                        <label for="" class="label"><span class="label-text">Transaction ID:</span></label>
+                        <input type="text" placeholder="TX ID" class="input input-bordered" value=""></div>
+                    <div class="form-control mt-6"><button class="btn btn-primary"><svg id="" class="svelte-fa  svelte-1w3t65e" style="width:1.25em;height:1em;text-align:center;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 512 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(256 256)" transform-origin="128 0"><g transform="translate(0,0) scale(1,1)"><path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z" fill="currentColor" transform="translate(-256 -256)"></path></g></g></svg> View NFT</button></div></div></div></div></div></main></div>
+  <div class="drawer-side"><label for="drawer-nav" class="drawer-overlay"></label>
+    <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
+      <li><a href="/dogecoin-nft-explorer"><svg id="" class="svelte-fa  svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 576 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(288 256)" transform-origin="144 0"><g transform="translate(0,0) scale(1,1)"><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z" fill="currentColor" transform="translate(-288 -256)"></path></g></g></svg> Home</a></li>
+      <li><a href="/dogecoin-nft-explorer/mint"><svg id="" class="svelte-fa  svelte-1w3t65e" style="height:1em;vertical-align:-.125em;transform-origin:center;overflow:visible" viewBox="0 0 448 512" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg"><g transform="translate(224 256)" transform-origin="112 0"><g transform="translate(0,0) scale(1,1)"><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z" fill="currentColor" transform="translate(-224 -256)"></path></g></g></svg> Mint</a></li></ul></div></div>
 
 
-		<script type="module" data-sveltekit-hydrate="1tux0h5">
-		import { start } from "/dogecoin-nft-explorer/_app/immutable/start-45b69ade.js";
+		<script type="module" data-sveltekit-hydrate="1irz4cx">
+		import { start } from "/dogecoin-nft-explorer/_app/immutable/start-fffd60c1.js";
 		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1tux0h5"]').parentNode,
+			target: document.querySelector('[data-sveltekit-hydrate="1irz4cx"]').parentNode,
 			paths: {"base":"/dogecoin-nft-explorer","assets":"/dogecoin-nft-explorer"},
 			session: {},
 			route: true,
