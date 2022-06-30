@@ -70,11 +70,9 @@
 
 {#await nftPromise}
 <!-- Loading screen -->
-    <div class="alert alert-info shadow-lg mt-4">
-        <div>
-            <Fa icon={faSync} spin fw/>
-            <span>Loading...</span>
-        </div>
+    <div class="flex justify-center items-center h-screen">
+        <Fa icon={faSync} size="3x" spin fw/>
+        <h2 class="font-bold text-2xl ml-4">Loading...</h2>
     </div>
 {:then}
     <div class="container mx-auto px-4 pt-8">
