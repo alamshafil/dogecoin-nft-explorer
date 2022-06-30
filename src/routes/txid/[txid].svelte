@@ -89,6 +89,6 @@
                 <a href="/dogecoin-nft-explorer" class="btn btn-active"><Fa icon={faArrowLeft} fw /> Go back</a>
               </div>
             </div>
-          </div>
+        </div>
     </div>
 {/await}
