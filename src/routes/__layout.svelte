@@ -41,8 +41,8 @@
             </label>
           </div>
           <!-- Navbar menu content -->
-          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
-          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
+          <li><a href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
+          <li><a href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
         </ul>
       </div>
     </div>
@@ -53,8 +53,8 @@
     <label for="drawer-nav" class="drawer-overlay" />
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
       <!-- Sidebar content -->
-      <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
-      <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
+      <li><a href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
+      <li><a href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
     </ul>
   </div>
 </div>
