@@ -1,4 +1,6 @@
 <script>
+    import Fa from 'svelte-fa'
+    import { faSync, faWarning, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
     import { page } from "$app/stores";
     import { hex2a } from "$lib/utils.js";
     import NFTCard from "$lib/NFTCard.svelte";
@@ -70,18 +72,7 @@
 <!-- Loading screen -->
     <div class="alert alert-info shadow-lg mt-4">
         <div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="stroke-current flex-shrink-0 w-6 h-6"
-                ><path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                /></svg
-            >
+            <Fa icon={faSync} spin fw/>
             <span>Loading...</span>
         </div>
     </div>
@@ -91,24 +82,15 @@
         <NFTActivity {nftInfo} {nftActivity} />
     </div>
 {:catch error}
-    <div class="alert alert-error shadow-lg mt-4">
-        <div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="stroke-current flex-shrink-0 h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                ><path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"
-                /></svg
-            >
-            <span>Error: {error}</span>
-            <div class="flex-none">
-                <a href="/dogecoin-nft-explorer" class="btn btn-sm btn-active">Go back</a>
+    <div class="flex justify-center items-center h-screen">
+        <div class="modal modal-open modal-bottom sm:modal-middle">
+            <div class="modal-box">
+              <Fa icon={faWarning} size="2x" fw />
+              <h3 class="font-bold text-lg mt-4">Error: {error}</h3>
+              <div class="modal-action">
+                <a href="/dogecoin-nft-explorer" class="btn btn-active"><Fa icon={faArrowLeft} fw /> Go back</a>
               </div>
-        </div>
+            </div>
+          </div>
     </div>
 {/await}

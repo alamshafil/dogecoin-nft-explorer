@@ -1,8 +1,9 @@
 <script>
+    import Fa from 'svelte-fa'
+    import { faSearch, faWarning } from '@fortawesome/free-solid-svg-icons'
     import { goto } from "$app/navigation";
 
     let error = "";
-
     let txID = "";
 
     async function viewNFT() {
@@ -38,7 +39,7 @@
                     <div class="form-control">
                         {#if error != ""}
                             <div class="alert alert-error shadow-lg mb-4">
-                                <span>{error}</span>
+                                <span><Fa icon={faWarning} fw/> {error}</span>
                             </div>
                         {/if}
                         <label for="" class="label">
@@ -52,7 +53,7 @@
                         />
                     </div>
                     <div class="form-control mt-6">
-                        <button on:click={viewNFT} class="btn btn-primary">View NFT</button>
+                        <button on:click={viewNFT} class="btn btn-primary"><Fa icon={faSearch} fw/> View NFT</button>
                     </div>
                 </div>
             </div>

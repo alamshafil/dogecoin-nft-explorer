@@ -1,5 +1,7 @@
 <script>
   import "../app.css";
+  import Fa from 'svelte-fa'
+  import { faHome, faAdd, faBars } from '@fortawesome/free-solid-svg-icons'
   import { onMount } from 'svelte'
   import { themeChange } from 'theme-change'
 
@@ -16,18 +18,7 @@
     <div class="w-full navbar bg-base-300">
       <div class="flex-none lg:hidden">
         <label for="drawer-nav" class="btn btn-square btn-ghost">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            class="inline-block w-6 h-6 stroke-current"
-            ><path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16M4 18h16"
-            /></svg
-          >
+          <Fa icon={faBars} fw/>
         </label>
       </div>
       <div class="flex-1">
@@ -50,8 +41,8 @@
             </label>
           </div>
           <!-- Navbar menu content -->
-          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer">Home</a></li>
-          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint">Mint</a></li>
+          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
+          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
         </ul>
       </div>
     </div>
@@ -62,8 +53,8 @@
     <label for="drawer-nav" class="drawer-overlay" />
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
       <!-- Sidebar content -->
-      <li><a href="/dogecoin-nft-explorer">Home</a></li>
-      <li><a href="/dogecoin-nft-explorer/mint">Mint</a></li>
+      <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer"><Fa icon={faHome} /> Home</a></li>
+      <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint"><Fa icon={faAdd} /> Mint</a></li>
     </ul>
   </div>
 </div>
