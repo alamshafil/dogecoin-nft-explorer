@@ -13,7 +13,7 @@
   
   <main>
       <!-- Hero -->
-      <div class="hero h-screen bg-base-200">
+      <div class="hero h-screen">
         <div class="hero-content flex-col">
           <img class="w-20" src="/dogecoin-nft-explorer/dogecoin.png" alt="Logo" />
           <div class="text-center">
