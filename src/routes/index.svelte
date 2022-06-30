@@ -11,6 +11,10 @@
     }
 </script>
 
+<svelte:head>
+    <title>Dogecoin NFT Explorer</title>
+</svelte:head>
+
 <main>
     <!-- Hero -->
     <div class="hero" style="height: 90vh;">

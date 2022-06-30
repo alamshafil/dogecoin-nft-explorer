@@ -1,14 +1,21 @@
 <script>
   import "../app.css";
+  import { onMount } from 'svelte'
+  import { themeChange } from 'theme-change'
+
+  onMount(() => {
+    themeChange(false)
+    // false parameter is required for svelte
+  })
 </script>
 
 <div class="drawer">
-  <input id="my-drawer-3" type="checkbox" class="drawer-toggle" />
+  <input id="drawer-nav" type="checkbox" class="drawer-toggle" />
   <div class="drawer-content flex flex-col">
     <!-- Navbar -->
     <div class="w-full navbar bg-base-300">
       <div class="flex-none lg:hidden">
-        <label for="my-drawer-3" class="btn btn-square btn-ghost">
+        <label for="drawer-nav" class="btn btn-square btn-ghost">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -36,9 +43,15 @@
       </div>
       <div class="flex-none hidden lg:block">
         <ul class="menu menu-horizontal">
+          <div class="form-control p-1">
+            <label class="label cursor-pointer">
+              <span class="label-text mr-4">Theme</span> 
+              <input data-toggle-theme="dark,light" data-act-class="ACTIVECLASS" type="checkbox" class="toggle" />
+            </label>
+          </div>
           <!-- Navbar menu content -->
-          <li><a href="/dogecoin-nft-explorer">Home</a></li>
-          <li><a href="/dogecoin-nft-explorer/mint">Mint</a></li>
+          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer">Home</a></li>
+          <li><a class="btn btn-ghost" href="/dogecoin-nft-explorer/mint">Mint</a></li>
         </ul>
       </div>
     </div>
@@ -46,7 +59,7 @@
     <slot />
   </div>
   <div class="drawer-side">
-    <label for="my-drawer-3" class="drawer-overlay" />
+    <label for="drawer-nav" class="drawer-overlay" />
     <ul class="menu p-4 overflow-y-auto w-80 bg-base-100">
       <!-- Sidebar content -->
       <li><a href="/dogecoin-nft-explorer">Home</a></li>
